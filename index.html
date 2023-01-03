@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="./css/script.css" />
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo">
+    <title>Javascript 1 - Slutprojekt</title>
+  </head>
+  <header>
+    <p> Welcome!</p>
+    <img src="./pic/flickr.png" id="logo" />
+    <form>
+      <input
+        id="txt-input"
+        name="text"
+        placeholder="Write word here.."
+      />
+      <div class="main-container">
+        <div class="sizes">
+          <select name="size" id="size-input">
+            <option value="n">small</option>
+            <option value="z">medium</option>
+            <option value="b">large</option>
+          </select>
+        </div>
+        <div class="amounts">
+          <select name="number" id="number-input">
+            <option value="15">15</option>
+            <option value="50">50</option>
+            <option value="150">150</option>
+          </select>
+        </div>
+        <div class="sorting">
+          <select name="sort" id="multiple-input">
+            <option value="date-posted-desc">date</option>
+            <option value="interestingness-desc">interestingness</option>
+            <option value="relevance">relevance</option>
+          </select>
+        </div>
+        <button id="btn">search away!</button>
+      </div>
+    </form>
+  </header>
+  <body>
+    <div id="image-container"></div>
+  </div>
+  <div id="loading"></div>
+</body>
+</html>
